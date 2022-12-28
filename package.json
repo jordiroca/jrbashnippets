@@ -1,0 +1,23 @@
+{
+    "name": "jrbashnippets",
+    "displayName": "jrbashnippets",
+    "description": "Snippets BASH de Jordi Roca",
+    "publisher": "jordiroca",
+    "repository": "https://github.com/jordiroca/jrbashnippets",
+    "icon": "https://github.com/jordiroca/jrbashnippets/jrbashnippets.png",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "shellscript",
+                "path": "./jrbashnippets.code-snippets"
+            }
+        ]
+    }
+}
