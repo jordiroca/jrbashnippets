@@ -6,5 +6,16 @@
             "# -*- coding: utf-8 -*-"
         ],
         "description": "Adds a shebang for 'bash' shell scripts and a magic comment for file encoding"
-    }
+    },
+    "heredoc2var": {
+        "prefix": "heredoc2var",
+        "body": [
+            "read -r -d '' ${1:variableName} <<-EOF",
+            "${2:Content to assign to ${1}}",
+            "EOF",
+            "echo \"\\$${1}\"",
+            "$3"
+        ],
+        "description": "Assign heredoc to variable"
+    },
 }
