@@ -1,7 +1,7 @@
 {
     "name": "jrbashnippets",
     "displayName": "jrbashnippets",
-    "description": "Snippets BASH de Jordi Roca",
+    "description": "Snippets BASH para VS Code de Jordi Roca",
     "publisher": "jordiroca",
     "repository": "https://github.com/jordiroca/jrbashnippets",
     "icon": "https://github.com/jordiroca/jrbashnippets/jrbashnippets.png",
