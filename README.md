@@ -52,12 +52,16 @@ When editing shellscript files use the following snippets:
 
 * shebang
 
-It will append:
+It will insert:
 
 ```
 #!/usr/bin/env bash
 # -*- coding: utf-8 -*-
 ```
+
+* heredoc2var
+
+
 
 ## License
 
