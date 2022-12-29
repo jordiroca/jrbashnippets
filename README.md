@@ -56,8 +56,6 @@ Add the extension to VS Code
 
 ## Usage
 
-Add the extension to VS Code
-
 When editing shellscript files use the following snippets:
 
 * shebang
