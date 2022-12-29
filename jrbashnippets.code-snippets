@@ -21,7 +21,7 @@
             "# LICENSE: See LICENSE file.",
             "#",
             "",
-            "${3:your code here}",
+            "${3:your code here}"
         ],
         "description": "Adds a shebang for 'bash' shell scripts, a magic comment for file encoding and a header"
     },
@@ -96,14 +96,14 @@
             "#",
             "#",
             "#######################################",
+            "#",
             "function ${1:name} ()",
             "{",
             "   ${2}",
             "}",
-            "",
+            ""
         ],
         "description": 
-            "Insert a function definition"
-        
-    },
+            "Insert a function definition"    
+    }
 }
