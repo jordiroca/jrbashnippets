@@ -4,7 +4,7 @@
     "description": "Snippets BASH para VS Code de Jordi Roca",
     "publisher": "jordiroca",
     "repository": "https://github.com/jordiroca/jrbashnippets",
-    "icon": "https://github.com/jordiroca/jrbashnippets/jrbashnippets.png",
+    "icon": "images/jrbashnippets.png",
     "version": "1.0.0",
     "engines": {
         "vscode": "^1.65.0"
