@@ -38,3 +38,13 @@ csplit -s -f _tmpsplit_ README.md '/.*STARTREFTABLE.*/+1' '/.*ENDREFTABLE.*/'
 cat _tmpsplit_00 _reftable.md _tmpsplit_02 > README.md
 
 rm -f _reftable.md _tmpsplit_0*
+
+# Subir la version
+lineaversion=$(grep -m 1 -nh '"version"' package.json | cut -d ":" -f 1)
+jrbshversion=$(cat package.json | grep -m 1 '"version"' | sed 's/.*"\(.*\)".*/\1/')
+nuevaversion=$(./semver bump patch $jrbshversion)
+
+sed -i.bak "${lineaversion}s/${jrbshversion}/${nuevaversion}/" package.json
+
+diff package.json*
+

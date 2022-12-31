@@ -103,7 +103,26 @@
             "}",
             ""
         ],
-        "description": 
-            "Insert a function definition"    
+        "description": "Insert a function definition"
+    },
+    "jrbcontains": {
+        "prefix": "contains",
+        "body": [
+            "# if haystack ${1:haystack} contains needle ${2:needle}",
+            "if [[ \"\\${${1:haystack}\\}\" == *\"\\${${2:needle}\\}\"* ]]; then",
+            "\t${3:echo \"\\${${1:haystack}\\} contains: \\${${2:needle}\\}\"}",
+            "fi\n"
+        ],
+        "description": "Check if substring in a string"
+    },
+    "jrbindexofsubstring": {
+        "prefix": "indexofsubstring",
+        "body": [
+            "# https://superuser.com/a/1628393",
+            "# Index in a haystack ${1:haystack} of a needle ${2:needle}",
+            "temp=\\${${1:haystack}%%\\${${2:needle}}*} && index=\\${#temp\\}",
+            "${3:echo \"index of \\\"\\${${2:needle}\\}\\\" in \\\"\\${${1:haystack}\\}\\\" is \\${index\\}\"\n}"
+        ],
+        "description": "Index of substring in a string"
     }
 }

@@ -64,6 +64,8 @@ When editing shellscript files use the following snippets:
 | <pre>while</pre> | While loop |
 | <pre>until</pre> | until loop |
 | <pre>fn</pre> | Insert a function definition |
+| <pre>contains</pre> | Check if substring in a string |
+| <pre>indexofsubstring</pre> | Index of substring in a string |
 <!-- ENDREFTABLE -->
 
 
@@ -75,3 +77,6 @@ Distributed under the MIT License. See [LICENSE](https://github.com/jordiroca/jr
 
 * [Jordi Roca](https://github.com/jordiroca/) - *JRBashnippets for VSCode*
 
+## Acknowledgments
+
+* [François Saint-Jacques](https://github.com/fsaintjacques) - *semver for bash*
